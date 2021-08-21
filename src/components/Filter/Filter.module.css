@@ -1,0 +1,24 @@
+.contactsFilterInput {
+  display: block;
+  width: 90%;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  border: grey solid 2px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .contactsFilterInput {
+    width: 40%;
+  }
+}
+
+.contactsFilterLabel {
+}
+
+.contactsFilterLabelText {
+  display: block;
+  margin-bottom: 10px;
+}
