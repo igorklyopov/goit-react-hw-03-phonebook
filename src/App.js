@@ -25,9 +25,7 @@ class App extends Component {
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
 
-    const savedContacts = JSON.parse(localStorage.getItem("contacts"));
-
-    if (savedContacts.length === 0) {
+    if (this.state.contacts.length === 0) {
       localStorage.removeItem("contacts");
     }
   }
