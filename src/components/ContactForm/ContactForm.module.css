@@ -1,4 +1,5 @@
 .contactForm {
+  margin-bottom: 40px;
 }
 
 .inputNameLabel,
@@ -14,9 +15,13 @@
   height: 25px;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: var(--bold-font-weight);
   outline: none;
-  border: grey solid 2px;
+  border: none;
   border-radius: 5px;
+  background-color: var(--secondary-bg-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -35,4 +40,6 @@
 .inputLabelText {
   display: block;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: var(--medium-font-weight);
 }

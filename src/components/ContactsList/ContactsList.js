@@ -1,5 +1,9 @@
 import PropTypes from "prop-types";
 import style from "../ContactsList/ContactsList.module.css";
+import IconButton, {
+  deleteContactBtnClassNames,
+} from "../IconButton/IconButton";
+import { ReactComponent as IconCross } from "../../images/cross.svg";
 
 const ContactsList = ({ contacts, onDeleteContactBtnClick }) => {
   return (
@@ -8,14 +12,16 @@ const ContactsList = ({ contacts, onDeleteContactBtnClick }) => {
         <li key={id} className={style.contactsListItem}>
           <p className={style.contactsName}>{name}: </p>
           <p className={style.contactsNumber}>{number}</p>
-          <button
-            className={style.btnDelContact}
+          <IconButton
             type="button"
+            ariaLabel="Delete contact button"
+            width="40"
+            height="40"
             onClick={() => onDeleteContactBtnClick(id)}
-            aria-label="Delete contact button"
+            className={deleteContactBtnClassNames}
           >
-            Delete
-          </button>
+            <IconCross width="15" height="15" />
+          </IconButton>
         </li>
       ))}
     </ul>
