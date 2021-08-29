@@ -1,37 +1,43 @@
 .contactsList {
-  /* list */
-  margin-top: 0;
-  padding-left: 0;
-  list-style: none;
-  /*  */
-  /* width: 100%; */
-}
-
-@media screen and (min-width: 768px) {
-  .contactsList {
-    /* width: 60%; */
-  }
 }
 
 .contactsListItem {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  word-break: break-word;
+  padding-top: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+
+.contactsListItem:hover {
+  box-shadow: var(--basic-box-shadow);
 }
 
 .contactsName,
 .contactsNumber {
-  /* text-align: left; */
   margin-right: 5px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .contactsName,
+  .contactsNumber {
+    font-size: inherit;
+    font-size: 18px;
+  }
 }
 
 .contactsName {
   text-align: left;
 }
 
-.contactsNumber {
-}
-
-.btnDelContact {
-  /* margin-right: 5px; */
+.contactsNumber:hover,
+.contactsNumber:focus {
+  color: var(--basic-light-text-color);
 }

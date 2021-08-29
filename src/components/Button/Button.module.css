@@ -4,10 +4,10 @@
   padding: 5px 10px 5px 10px;
   color: var(--secondary-text-color);
   font-size: 18px;
-  font-weight: var(--medium-font-weight);
   text-transform: uppercase;
   background-color: var(--secondary-light-bg-color);
   border-radius: 5px;
+  box-shadow: var(--basic-box-shadow);
 }
 
 .addContactBtn:hover,

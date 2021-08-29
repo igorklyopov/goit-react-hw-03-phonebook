@@ -4,14 +4,20 @@ import IconButton, {
   deleteContactBtnClassNames,
 } from "../IconButton/IconButton";
 import { ReactComponent as IconCross } from "../../images/cross.svg";
+import addClassNames from "../../utils/addClassNames";
 
 const ContactsList = ({ contacts, onDeleteContactBtnClick }) => {
+  const contactsListClassNames = addClassNames("list", style.contactsList);
+  const contactNameClassNames = addClassNames("link", style.contactsNumber);
+
   return (
-    <ul className={style.contactsList}>
+    <ul className={contactsListClassNames}>
       {contacts.map(({ id, name, number }) => (
         <li key={id} className={style.contactsListItem}>
           <p className={style.contactsName}>{name}: </p>
-          <p className={style.contactsNumber}>{number}</p>
+          <a href={`tel:${number}`} className={contactNameClassNames}>
+            {number}
+          </a>
           <IconButton
             type="button"
             ariaLabel="Delete contact button"

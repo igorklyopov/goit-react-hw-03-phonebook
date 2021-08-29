@@ -51,6 +51,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-text-color);
+  letter-spacing: 1px;
 }
 
 h1,
@@ -65,8 +66,8 @@ p {
 
 .mainTitle,
 .title {
-  /* font-family: "Patua One"; */
-  font-weight: var(--regular-font-weight);
+  font-family: "Russo One";
+  font-weight: var(--medium-font-weight);
   color: var(--basic-light-text-color);
   line-height: 1.3;
   letter-spacing: 2px;
@@ -88,9 +89,6 @@ p {
   text-decoration: none;
   font-style: normal;
   color: inherit;
-  /* transition-property: color, fill, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .button {

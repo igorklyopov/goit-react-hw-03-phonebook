@@ -5,6 +5,7 @@
   padding: 8px;
   color: var(--secondary-text-color);
   background-color: var(--secondary-light-bg-color);
+  box-shadow: var(--basic-box-shadow);
 }
 
 .iconButton:hover,
