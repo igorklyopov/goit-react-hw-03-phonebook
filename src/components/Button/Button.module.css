@@ -13,5 +13,5 @@
 .addContactBtn:hover,
 .addContactBtn:focus {
   color: var(--basic-light-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
 }

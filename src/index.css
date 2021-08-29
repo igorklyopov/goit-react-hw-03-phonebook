@@ -5,10 +5,8 @@
   --basic-light-text-color: #fffffe;
   --primary-bg-color: #232946;
   --secondary-bg-color: #b8c1ec;
-  --accent-color: #f582ae;
-  /* --primary-bg-gradient: linear-gradient(135deg, #fccf31 10%, #f55555 100%); */
+  --accent-bg-color: #f582ae;
   --secondary-light-bg-color: #eebbc3;
-  /* --accent-bg-color: #9999ff; */
   --basic-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 
   /* typography */

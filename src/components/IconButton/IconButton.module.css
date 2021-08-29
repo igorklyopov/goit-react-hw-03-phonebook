@@ -11,7 +11,7 @@
 .iconButton:hover,
 .iconButton:focus {
   color: var(--basic-light-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
 }
 
 .deleteContactBtn {
